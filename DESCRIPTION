@@ -1,0 +1,15 @@
+Package: oneway
+Title: One-way Analysis of Variance
+Version: 0.0.1
+Authors@R: 
+    person(given = "Robert",
+           family = "Kabacoff",
+           role = c("aut", "cre"),
+           email = "rkabacoff@wesleyan.edu")
+Description: This package assesses group differences using parametric
+    one-way analysis of variance.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
