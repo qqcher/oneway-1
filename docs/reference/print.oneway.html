@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • oneway</title>
+<title>Print one-way ANOVA results — print.oneway • oneway</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Print one-way ANOVA results — print.oneway" />
+<meta property="og:description" content="print.oneway prints one-way ANOVA results" />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -100,60 +101,68 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Print one-way ANOVA results</h1>
+    
+    <div class="hidden name"><code>print.oneway.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>print.oneway prints one-way ANOVA results</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='co'># S3 method for oneway</span>
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="oneway.html">oneway()</a></code> </p>
-        </td>
-        <td><p>One Way Analysis of Variance</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="plot.oneway.html">plot(<i>&lt;oneway&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Plot one-way ANOVA</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="print.oneway.html">print(<i>&lt;oneway&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Print one-way ANOVA results</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="summary.oneway.html">summary(<i>&lt;oneway&gt;</i>)</a></code> </p>
-        </td>
-        <td><p>Summarize one-way ANOVA</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>an object of class oneway.</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>additional arguments passed to the function.</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>the input object is returned silently</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='va'>mileage</span> <span class='op'>&lt;-</span> <span class='fu'><a href='oneway.html'>oneway</a></span><span class='op'>(</span><span class='va'>mpg</span> <span class='op'>~</span> <span class='va'>cyl</span>, <span class='va'>mtcars</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>mileage</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; Summary Statistics
+#&gt;  ====================
+#&gt;   cyl     mpg.n  mpg.mean    mpg.sd
+#&gt; 1   4 11.000000 26.663636  4.509828
+#&gt; 2   6  7.000000 19.742857  1.453567
+#&gt; 3   8 14.000000 15.100000  2.560048
+#&gt; Anova
+#&gt;  ===================
+#&gt; 
+#&gt; Call:
+#&gt; lm(formula = formula, data = data)
+#&gt; 
+#&gt; Residuals:
+#&gt;     Min      1Q  Median      3Q     Max 
+#&gt; -4.9814 -2.1185  0.2217  1.0717  7.5186 
+#&gt; 
+#&gt; Coefficients:
+#&gt;             Estimate Std. Error t value Pr(&gt;|t|)    
+#&gt; (Intercept)  37.8846     2.0738   18.27  &lt; 2e-16 ***
+#&gt; cyl          -2.8758     0.3224   -8.92 6.11e-10 ***
+#&gt; ---
+#&gt; Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+#&gt; 
+#&gt; Residual standard error: 3.206 on 30 degrees of freedom
+#&gt; Multiple R-squared:  0.7262,	Adjusted R-squared:  0.7171 
+#&gt; F-statistic: 79.56 on 1 and 30 DF,  p-value: 6.113e-10
+#&gt; </div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
