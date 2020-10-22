@@ -1,0 +1,26 @@
+---
+title: "Introduction to oneway package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{oneway}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Introduction
+
+Here is an article on using the `oneway` package.
+
+```{r setup}
+library(oneway)
+fit <- oneway(mpg ~ carb, mtcars)
+print(fit)
+plot(fit)
+```

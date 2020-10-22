@@ -7,9 +7,12 @@
 \method{plot}{oneway}(x, ...)
 }
 \arguments{
-\item{x}{an object jof class oneway.}
+\item{x}{an object of class oneway.}
 
-\item{...}{additional arguments passed to boxplot function.}
+\item{...}{additional arguments passed to geom_boxplot function.}
+}
+\value{
+ggplot2 graph
 }
 \description{
 plot.oneway creates group comparisons for a one-way ANOVA.
