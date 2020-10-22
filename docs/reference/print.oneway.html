@@ -85,6 +85,9 @@
   </a>
 </li>
 <li>
+  <a href="../articles/oneway.html">Get started</a>
+</li>
+<li>
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
@@ -135,14 +138,14 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='va'>mileage</span> <span class='op'>&lt;-</span> <span class='fu'><a href='oneway.html'>oneway</a></span><span class='op'>(</span><span class='va'>mpg</span> <span class='op'>~</span> <span class='va'>cyl</span>, <span class='va'>mtcars</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>mileage</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; Summary Statistics
-#&gt;  ====================
-#&gt;   cyl     mpg.n  mpg.mean    mpg.sd
-#&gt; 1   4 11.000000 26.663636  4.509828
-#&gt; 2   6  7.000000 19.742857  1.453567
-#&gt; 3   8 14.000000 15.100000  2.560048
-#&gt; Anova
-#&gt;  ===================
+</div><div class='output co'>#&gt; 
+#&gt; <span style='color: #BB0000;font-weight: bold;text-decoration: underline;'>Summary Statistics</span><span>
+#&gt;   cyl  n     mean       sd
+#&gt; 1   4 11 26.66364 4.509828
+#&gt; 2   6  7 19.74286 1.453567
+#&gt; 3   8 14 15.10000 2.560048
+#&gt; 
+#&gt; </span><span style='color: #BB0000;font-weight: bold;text-decoration: underline;'>ANOVA</span><span>
 #&gt; 
 #&gt; Call:
 #&gt; lm(formula = formula, data = data)
@@ -161,7 +164,7 @@
 #&gt; Residual standard error: 3.206 on 30 degrees of freedom
 #&gt; Multiple R-squared:  0.7262,	Adjusted R-squared:  0.7171 
 #&gt; F-statistic: 79.56 on 1 and 30 DF,  p-value: 6.113e-10
-#&gt; </div></pre>
+#&gt; </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
