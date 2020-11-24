@@ -1,7 +1,8 @@
 #' ANOVA assumptions
 #'
 #' assumptions() assesses ANOVA assumptions of normality of residuals,
-#' and equality of group variances on the outcome variable
+#' and equality of group variances on the outcome variable. It produces two
+#' dataframes and two graphs
 #'
 #' @param fit an object of class 'oneway'.
 #' @export
